@@ -12,7 +12,7 @@ const galleryItems = [
     id: 1,
     title: "Luxury Mandap Ceremony Decor",
     category: "Weddings",
-    img: "https://images.unsplash.com/photo-1523438885200-e635ba2c371e?q=80&w=1200",
+    img: "https://ik.imagekit.io/srinadh118kit/Photo%20Gallery%20of%20Aahlada%20Events/mainpageimage%20(12).webp",
     description: "Lush white floral dome ceiling with glowing golden down-lights for traditional rituals.",
   },
   {
@@ -77,8 +77,8 @@ export default function Gallery() {
   const [filter, setFilter] = useState("All");
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
 
-  const filteredItems = filter === "All" 
-    ? galleryItems 
+  const filteredItems = filter === "All"
+    ? galleryItems
     : galleryItems.filter(item => item.category === filter);
 
   const openLightbox = (id: number) => {
@@ -133,7 +133,7 @@ export default function Gallery() {
               Cinematic Portfolio
             </span>
           </motion.div>
-          
+
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -142,7 +142,7 @@ export default function Gallery() {
           >
             The Gallery
           </motion.h1>
-          
+
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -159,11 +159,10 @@ export default function Gallery() {
             <button
               key={cat}
               onClick={() => setFilter(cat)}
-              className={`px-6 py-2.5 rounded-full border font-sans text-xs tracking-widest uppercase transition-all duration-300 ${
-                filter === cat
-                  ? "bg-gold border-gold text-onyx font-semibold shadow-[0_0_15px_rgba(201,168,106,0.25)]"
-                  : "bg-surface/50 border-gold/15 hover:border-gold/50 text-ivory-muted hover:text-ivory"
-              }`}
+              className={`px-6 py-2.5 rounded-full border font-sans text-xs tracking-widest uppercase transition-all duration-300 ${filter === cat
+                ? "bg-gold border-gold text-onyx font-semibold shadow-[0_0_15px_rgba(201,168,106,0.25)]"
+                : "bg-surface/50 border-gold/15 hover:border-gold/50 text-ivory-muted hover:text-ivory"
+                }`}
             >
               {cat}
             </button>
@@ -171,7 +170,7 @@ export default function Gallery() {
         </div>
 
         {/* Gallery Grid */}
-        <motion.div 
+        <motion.div
           layout
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
         >
@@ -192,10 +191,10 @@ export default function Gallery() {
                   className="absolute inset-0 bg-cover bg-center transition-all duration-700 ease-out group-hover:scale-105"
                   style={{ backgroundImage: `url(${item.img})` }}
                 />
-                
+
                 {/* Hover overlay and text */}
                 <div className="absolute inset-0 bg-gradient-to-t from-onyx via-onyx/40 to-transparent opacity-60 group-hover:opacity-85 transition-opacity duration-300" />
-                
+
                 {/* Details */}
                 <div className="absolute inset-0 p-8 flex flex-col justify-end gap-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
                   <span className="font-sans text-[0.65rem] tracking-[0.3em] text-gold uppercase">
@@ -233,7 +232,7 @@ export default function Gallery() {
                   {galleryItems[lightboxIndex].title}
                 </span>
               </div>
-              
+
               <button
                 onClick={closeLightbox}
                 className="p-3 rounded-full border border-white/10 bg-white/5 hover:bg-gold hover:text-onyx hover:border-gold text-ivory transition-all duration-300"
