@@ -54,7 +54,7 @@ export default function Contact() {
       <div className="absolute top-20 left-1/4 w-[500px] h-[500px] gold-glow-radial pointer-events-none -z-10" />
       <div className="absolute bottom-20 right-1/4 w-[500px] h-[500px] gold-glow-radial pointer-events-none -z-10" />
 
-      <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 xs:px-6 md:px-12 relative z-10">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 flex flex-col items-center">
           <motion.div
@@ -193,7 +193,7 @@ export default function Contact() {
             transition={{ duration: 0.6, delay: 0.15 }}
             className="lg:col-span-7"
           >
-            <div className="glass-panel p-8 md:p-12 rounded-3xl border border-glass-border shadow-[0_0_40px_rgba(0,0,0,0.5)]">
+            <div className="glass-panel p-6 xs:p-8 md:p-12 rounded-3xl border border-glass-border shadow-[0_0_40px_rgba(0,0,0,0.5)]">
               <h2 className="font-serif text-2xl md:text-3xl text-ivory tracking-wide mb-8">
                 Request A Custom Proposal
               </h2>
@@ -314,17 +314,17 @@ export default function Contact() {
                 <button
                   type="submit"
                   disabled={submitted}
-                  className="w-full mt-4 flex items-center justify-center gap-2.5 py-4 rounded-full bg-gold text-onyx font-sans text-sm tracking-[0.15em] uppercase font-semibold transition-all duration-300 hover:bg-gold-hover hover:-translate-y-0.5 shadow-[0_0_20px_rgba(201,168,106,0.2)] disabled:opacity-50 disabled:pointer-events-none"
+                  className="w-full mt-4 flex items-center justify-center gap-1.5 md:gap-2.5 py-4 rounded-full bg-gold text-onyx font-sans text-xs md:text-sm tracking-wider md:tracking-[0.15em] uppercase font-semibold transition-all duration-300 hover:bg-gold-hover hover:-translate-y-0.5 shadow-[0_0_20px_rgba(201,168,106,0.2)] disabled:opacity-50 disabled:pointer-events-none"
                 >
                   {submitted ? (
                     <>
                       <Send className="w-4 h-4 animate-bounce" />
-                      Redirecting to WhatsApp...
+                      Redirecting<span className="hidden sm:inline"> to WhatsApp</span>...
                     </>
                   ) : (
                     <>
                       <Send className="w-4 h-4" />
-                      Submit & Open WhatsApp
+                      Submit<span className="hidden sm:inline"> & Open WhatsApp</span>
                     </>
                   )}
                 </button>
