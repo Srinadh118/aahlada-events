@@ -7,21 +7,21 @@ import { ArrowRight, Star, Quote, Award, Heart, Sparkles, MessageCircle } from "
 
 // Curated royalty-free high-quality images representing Indian luxury weddings and events
 const heroImages = [
-  "https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1920", // Luxury Stage
-  "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=1920", // Floral Walkway
-  "https://images.unsplash.com/photo-1469371670807-013ccf25f16a?q=80&w=1920", // Event Dinner Decor
+  "https://ik.imagekit.io/srinadh118kit/Photo%20Gallery%20of%20Aahlada%20Events/mainpageimage%20(16).webp?updatedAt=1781972532446", // Luxury Stage
+  "https://ik.imagekit.io/srinadh118kit/Photo%20Gallery%20of%20Aahlada%20Events/mainpageimage%20(11).webp?updatedAt=1781972532779", // Floral Walkway
+  "https://ik.imagekit.io/srinadh118kit/Photo%20Gallery%20of%20Aahlada%20Events/mainpageimage%20(13).webp?updatedAt=1781972532455", // Event Dinner Decor
 ];
 
 const previews = [
   {
     title: "Luxury Mandap & Stage",
     category: "Weddings",
-    img: "https://images.unsplash.com/photo-1523438885200-e635ba2c371e?q=80&w=1000",
+    img: "https://ik.imagekit.io/srinadh118kit/Photo%20Gallery%20of%20Aahlada%20Events/mainpageimage%20(12).webp",
   },
   {
     title: "Haldi & Sangeet Floral Decor",
     category: "Cultural",
-    img: "https://images.unsplash.com/photo-1583939003579-730e3918a45a?q=80&w=1000",
+    img: "https://ik.imagekit.io/srinadh118kit/Photo%20Gallery%20of%20Aahlada%20Events/mainpageimage%20(8).webp",
   },
   {
     title: "Bespoke Table Styling",
@@ -31,7 +31,7 @@ const previews = [
   {
     title: "Grand Entrance Lighting",
     category: "Corporate & Private",
-    img: "https://images.unsplash.com/photo-1507504038482-7621c67645f8?q=80&w=1000",
+    img: "https://ik.imagekit.io/srinadh118kit/Photo%20Gallery%20of%20Aahlada%20Events/mainpageimage%20(14).webp?updatedAt=1781972531898",
   },
 ];
 
@@ -80,7 +80,7 @@ export default function Home() {
               animate={{ opacity: idx === activeHero ? 1 : 0 }}
               transition={{ duration: 1.5 }}
               className="absolute inset-0 bg-cover bg-center"
-              style={{ backgroundImage: `url(${src})` }}
+              style={{ backgroundImage: `url("${src}")` }}
             >
               <div className="absolute inset-0 bg-gradient-to-t from-onyx via-onyx/40 to-transparent" />
               <div className="absolute inset-0 bg-onyx/45" />
@@ -259,7 +259,7 @@ export default function Home() {
               >
                 <div
                   className="absolute inset-0 bg-cover bg-center transition-transform duration-1000 ease-out group-hover:scale-110"
-                  style={{ backgroundImage: `url(${item.img})` }}
+                  style={{ backgroundImage: `url("${item.img}")` }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-onyx via-onyx/40 to-transparent opacity-80 group-hover:opacity-90 transition-opacity" />
                 <div className="absolute bottom-0 left-0 right-0 p-6 flex flex-col gap-2">

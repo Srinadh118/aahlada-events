@@ -19,42 +19,42 @@ const galleryItems = [
     id: 2,
     title: "Vibrant Haldi Floral Arch & Swing",
     category: "Haldi",
-    img: "https://images.unsplash.com/photo-1583939003579-730e3918a45a?q=80&w=1200",
+    img: "https://ik.imagekit.io/srinadh118kit/Photo%20Gallery%20of%20Aahlada%20Events/mainpageimage%20(8).webp",
     description: "Yellow-orange marigold themes with a customized floral swing setup for outdoor celebrations.",
   },
   {
     id: 3,
     title: "Sangeet Dance Stage & Fairy Lights",
     category: "Sangeet",
-    img: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=1200",
+    img: "https://ik.imagekit.io/srinadh118kit/Photo%20Gallery%20of%20Aahlada%20Events/mainpageimage%20(13).webp",
     description: "Illuminated dynamic stages with cascading light curtains and custom monogram display boards.",
   },
   {
     id: 4,
     title: "Pastel Thematic Naming Ceremony",
     category: "Birthdays",
-    img: "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?q=80&w=1200",
+    img: "https://ik.imagekit.io/srinadh118kit/Photo%20Gallery%20of%20Aahlada%20Events/mainpageimage.webp",
     description: "Bespoke peach and gold organic arches with floral cradle decorations.",
   },
   {
     id: 5,
     title: "Grand Entrance Walkway Styling",
     category: "Decor",
-    img: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=1200",
+    img: "https://ik.imagekit.io/srinadh118kit/Photo%20Gallery%20of%20Aahlada%20Events/mainpageimage%20(17).webp?updatedAt=1781972531680",
     description: "Fairy light canopies with tall flower pillars welcoming guests into the main hall.",
   },
   {
     id: 6,
     title: "Luxury Reception Table Settings",
     category: "Decor",
-    img: "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?q=80&w=1200",
+    img: "https://ik.imagekit.io/srinadh118kit/Photo%20Gallery%20of%20Aahlada%20Events/mainpageimage%20(11).webp",
     description: "Tall glass candelabras, customized gold charger plates, and delicate white rose centerpieces.",
   },
   {
     id: 7,
     title: "Grand Wedding Reception Stage",
     category: "Weddings",
-    img: "https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1200",
+    img: "https://ik.imagekit.io/srinadh118kit/Photo%20Gallery%20of%20Aahlada%20Events/mainpageimage%20(16).webp",
     description: "Ornate wall styling with hundreds of hanging white orchids and warm backlights.",
   },
   {
@@ -68,7 +68,7 @@ const galleryItems = [
     id: 9,
     title: "Kids Birthday Thematic Castle Decor",
     category: "Birthdays",
-    img: "https://images.unsplash.com/photo-1513151233558-d860c5398176?q=80&w=1200",
+    img: "https://ik.imagekit.io/srinadh118kit/Photo%20Gallery%20of%20Aahlada%20Events/mainpageimage%20(10).webp",
     description: "Colorful castle silhouette backdrop with customized balloon pillars and dessert station styling.",
   },
 ];
@@ -189,7 +189,7 @@ export default function Gallery() {
                 {/* Image */}
                 <div
                   className="absolute inset-0 bg-cover bg-center transition-all duration-700 ease-out group-hover:scale-105"
-                  style={{ backgroundImage: `url(${item.img})` }}
+                  style={{ backgroundImage: `url("${item.img}")` }}
                 />
 
                 {/* Hover overlay and text */}
