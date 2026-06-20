@@ -82,7 +82,7 @@ export default function Footer() {
       </div>
 
       <div className="max-w-7xl mx-auto px-6 md:px-12 border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-        <p className="font-sans text-xs text-ivory-muted/60 text-center md:text-left">
+        <p className="font-sans text-xs text-ivory-muted/80 text-center md:text-left">
           &copy; {new Date().getFullYear()} Aahlada Events. All Rights Reserved. Crafted for luxury.
         </p>
         <div className="flex gap-6">
@@ -90,7 +90,7 @@ export default function Footer() {
             href="https://wa.me/919731647465"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-ivory-muted/60 hover:text-gold transition-colors"
+            className="text-ivory-muted/80 hover:text-gold transition-colors"
             aria-label="WhatsApp"
           >
             <MessageCircle className="w-4 h-4" />

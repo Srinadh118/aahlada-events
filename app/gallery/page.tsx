@@ -147,7 +147,7 @@ export default function Gallery() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="font-sans text-sm md:text-base text-ivory-muted"
+            className="font-sans text-sm md:text-base text-ivory-muted/60"
           >
             Take a visual tour through our signature weddings, vibrant haldi swings, detailed corporate backdrops, and private family milestones.
           </motion.p>
@@ -204,7 +204,7 @@ export default function Gallery() {
                   <h3 className="font-serif text-xl tracking-wide text-ivory">
                     {item.title}
                   </h3>
-                  <p className="font-sans text-xs text-ivory-muted opacity-0 group-hover:opacity-100 transition-opacity duration-300 leading-relaxed mt-1">
+                  <p className="font-sans text-xs text-ivory-muted/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 leading-relaxed mt-1">
                     {item.description}
                   </p>
                 </div>
@@ -282,10 +282,10 @@ export default function Gallery() {
 
             {/* Bottom Bar Details */}
             <div className="text-center z-10 max-w-2xl mx-auto">
-              <p className="font-sans text-sm text-ivory-muted leading-relaxed">
+              <p className="font-sans text-sm text-ivory-muted/60 leading-relaxed">
                 {galleryItems[lightboxIndex].description}
               </p>
-              <div className="font-sans text-[0.7rem] tracking-wider text-ivory-muted/40 mt-4">
+              <div className="font-sans text-[0.7rem] tracking-wider text-ivory-muted/45 mt-4">
                 {lightboxIndex + 1} of {galleryItems.length}
               </div>
             </div>

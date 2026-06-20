@@ -97,7 +97,7 @@ export default function Services() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="font-sans text-sm md:text-base text-ivory-muted leading-relaxed"
+            className="font-sans text-sm md:text-base text-ivory-muted/60 leading-relaxed"
           >
             From stunning stage mandaps in Sahebnagar to premium wedding decors across LB Nagar and Hyderabad, we provide custom styling and production tailored for every celebration.
           </motion.p>
@@ -125,13 +125,13 @@ export default function Services() {
                     {service.title}
                   </h3>
                   
-                  <p className="font-sans text-sm text-ivory-muted mb-6 leading-relaxed">
+                  <p className="font-sans text-sm text-ivory-muted/60 mb-6 leading-relaxed">
                     {service.description}
                   </p>
                   
                   <ul className="flex flex-col gap-2.5 mb-8">
                     {service.bullets.map((b) => (
-                      <li key={b} className="flex items-center gap-2.5 font-sans text-xs text-ivory-muted/90">
+                      <li key={b} className="flex items-center gap-2.5 font-sans text-xs text-ivory-muted/50">
                         <span className="w-1 h-1 rounded-full bg-gold" />
                         <span>{b}</span>
                       </li>

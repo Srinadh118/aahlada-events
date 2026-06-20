@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { ArrowRight, Star, Quote, Award, Heart, Sparkles, MessageCircle } from "lucide-react";
@@ -168,10 +168,10 @@ export default function Home() {
               Crafting Memorable Celebrations in Hyderabad
             </h2>
             <div className="w-16 h-[1px] bg-gold my-2" />
-            <p className="font-sans text-sm md:text-base text-ivory-muted leading-relaxed">
+            <p className="font-sans text-sm md:text-base text-ivory-muted/60 leading-relaxed">
               Established in 2020 in Sahebnagar, Vanasthalipuram, Aahlada Events is built on the philosophy that every event is an intimate, visual narrative. By merging deep cultural traditions with clean modern design styling, we turn banquet halls, stages, and open lawns into cinematic experiences.
             </p>
-            <p className="font-sans text-sm md:text-base text-ivory-muted leading-relaxed">
+            <p className="font-sans text-sm md:text-base text-ivory-muted/60 leading-relaxed">
               Whether you are planning a magnificent wedding mandap floral setup, a lively Haldi/Sangeet, a grand corporate display, or an intimate birthday, our team ensures every corner breathes elegance and precision.
             </p>
           </motion.div>
@@ -188,7 +188,7 @@ export default function Home() {
               <Award className="w-8 h-8 text-gold" />
               <div>
                 <span className="font-serif text-3xl md:text-4xl text-ivory block font-medium">300+</span>
-                <span className="font-sans text-xs tracking-wider text-ivory-muted uppercase">Events Orchestrated</span>
+                <span className="font-sans text-xs tracking-wider text-ivory-muted/60 uppercase">Events Orchestrated</span>
               </div>
             </div>
 
@@ -197,7 +197,7 @@ export default function Home() {
               <Star className="w-8 h-8 text-gold fill-gold/10" />
               <div>
                 <span className="font-serif text-3xl md:text-4xl text-ivory block font-medium">5.0 ★</span>
-                <span className="font-sans text-xs tracking-wider text-ivory-muted uppercase">Verified Client Rating</span>
+                <span className="font-sans text-xs tracking-wider text-ivory-muted/60 uppercase">Verified Client Rating</span>
               </div>
             </div>
 
@@ -206,7 +206,7 @@ export default function Home() {
               <Heart className="w-8 h-8 text-gold" />
               <div>
                 <span className="font-serif text-3xl md:text-4xl text-ivory block font-medium">100%</span>
-                <span className="font-sans text-xs tracking-wider text-ivory-muted uppercase">Bespoke Customization</span>
+                <span className="font-sans text-xs tracking-wider text-ivory-muted/60 uppercase">Bespoke Customization</span>
               </div>
             </div>
 
@@ -215,7 +215,7 @@ export default function Home() {
               <Sparkles className="w-8 h-8 text-gold" />
               <div>
                 <span className="font-serif text-3xl md:text-4xl text-ivory block font-medium">2020</span>
-                <span className="font-sans text-xs tracking-wider text-ivory-muted uppercase">Est. Studio Year</span>
+                <span className="font-sans text-xs tracking-wider text-ivory-muted/60 uppercase">Est. Studio Year</span>
               </div>
             </div>
           </motion.div>
@@ -275,7 +275,7 @@ export default function Home() {
       {/* 4. TESTIMONIALS */}
       <section className="relative py-24 md:py-36 px-6 z-10 max-w-4xl mx-auto text-center">
         <Quote className="w-12 h-12 text-gold/30 mx-auto mb-8" />
-        
+
         <div className="min-h-[220px] flex items-center justify-center">
           <AnimatePresence mode="wait">
             {testimonials.map((t, idx) => {
@@ -317,9 +317,8 @@ export default function Home() {
             <button
               key={idx}
               onClick={() => setActiveTestimonial(idx)}
-              className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                idx === activeTestimonial ? "w-6 bg-gold" : "bg-white/20"
-              }`}
+              className={`w-2 h-2 rounded-full transition-all duration-300 ${idx === activeTestimonial ? "w-6 bg-gold" : "bg-white/20"
+                }`}
               aria-label={`Testimonial ${idx + 1}`}
             />
           ))}
@@ -327,10 +326,10 @@ export default function Home() {
       </section>
 
       {/* 5. INQUIRY BLOCK */}
-      <section className="relative py-20 px-6 z-10 max-w-5xl mx-auto mb-20">
+      <section className="relative py-20 px-6 z-10 max-w-6xl mx-auto mb-20">
         <div className="glass-panel p-10 md:p-16 rounded-3xl border border-glass-border flex flex-col lg:flex-row items-center justify-between gap-10 shadow-[0_0_50px_rgba(0,0,0,0.8)] relative overflow-hidden">
           <div className="absolute top-0 right-0 w-80 h-80 bg-gold/5 rounded-full blur-3xl -z-10" />
-          
+
           <div className="flex flex-col gap-4 text-center lg:text-left">
             <span className="font-sans text-xs tracking-[0.3em] text-gold uppercase font-semibold">
               Begin Planning
@@ -338,24 +337,24 @@ export default function Home() {
             <h3 className="font-serif text-3xl md:text-5xl text-ivory leading-tight uppercase tracking-wider">
               Bring Your Celebration <br className="hidden md:block" /> To Life
             </h3>
-            <p className="font-sans text-sm text-ivory-muted max-w-md mt-2">
+            <p className="font-sans text-sm text-ivory-muted/60 max-w-md mt-2">
               Let's create something extraordinary. Send us a message on WhatsApp for custom decor packages starting from ₹7,000+.
             </p>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-4 w-full lg:w-auto">
+          <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto shrink-0">
             <a
               href="https://wa.me/919731647465?text=Hi%20Aahlada%20Events%2C%20I%20would%20like%20to%20inquire%20about%20your%20event%20planning%20and%20decor%20services."
               target="_blank"
               rel="noopener noreferrer"
-              className="flex-1 lg:flex-none inline-flex items-center justify-center gap-2.5 px-8 py-4.5 rounded-full bg-gold text-onyx font-sans text-sm tracking-[0.15em] uppercase font-semibold transition-all duration-300 hover:bg-gold-hover hover:-translate-y-0.5 shadow-[0_0_20px_rgba(201,168,106,0.2)]"
+              className="flex-1 sm:flex-none sm:w-60 inline-flex items-center justify-center gap-2.5 px-6 py-4 rounded-full bg-gold text-onyx font-sans text-sm tracking-[0.15em] uppercase font-semibold transition-all duration-300 hover:bg-gold-hover hover:-translate-y-0.5 shadow-[0_0_20px_rgba(201,168,106,0.2)]"
             >
-              <MessageCircle className="w-4 h-4 fill-onyx" />
-              WhatsApp Inquiry
+              <MessageCircle className="w-6 h-6 fill-onyx animate-pulse" />
+              WhatsApp
             </a>
             <Link
               href="/contact"
-              className="flex-1 lg:flex-none inline-flex items-center justify-center px-8 py-4.5 rounded-full border border-ivory/20 hover:border-gold/50 bg-white/5 hover:bg-white/10 text-ivory text-sm font-sans tracking-[0.15em] uppercase transition-all duration-300 hover:-translate-y-0.5"
+              className="flex-1 sm:flex-none sm:w-60 inline-flex items-center justify-center px-6 py-4 rounded-full border border-ivory/20 hover:border-gold/50 bg-white/5 hover:bg-white/10 text-ivory text-sm font-sans tracking-[0.15em] uppercase transition-all duration-300 hover:-translate-y-0.5"
             >
               Contact Details
             </Link>
