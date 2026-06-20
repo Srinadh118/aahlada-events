@@ -185,10 +185,10 @@ export default function Home() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8 }}
-            className="grid grid-cols-2 gap-6"
+            className="grid grid-cols-2 gap-4 sm:gap-6"
           >
             {/* Stat Card 1 */}
-            <div className="glass-panel p-8 rounded-2xl flex flex-col gap-4 border border-glass-border">
+            <div className="glass-panel p-3 sm:p-4 md:p-8 rounded-2xl flex flex-col gap-4 border border-glass-border">
               <Award className="w-8 h-8 text-gold" />
               <div>
                 <span className="font-serif text-3xl md:text-4xl text-ivory block font-medium">300+</span>
@@ -197,7 +197,7 @@ export default function Home() {
             </div>
 
             {/* Stat Card 2 */}
-            <div className="glass-panel p-8 rounded-2xl flex flex-col gap-4 border border-glass-border">
+            <div className="glass-panel p-3 sm:p-4 md:p-8 rounded-2xl flex flex-col gap-4 border border-glass-border">
               <Star className="w-8 h-8 text-gold fill-gold/10" />
               <div>
                 <span className="font-serif text-3xl md:text-4xl text-ivory block font-medium">5.0 ★</span>
@@ -206,7 +206,7 @@ export default function Home() {
             </div>
 
             {/* Stat Card 3 */}
-            <div className="glass-panel p-8 rounded-2xl flex flex-col gap-4 border border-glass-border">
+            <div className="glass-panel p-3 sm:p-4 md:p-8 rounded-2xl flex flex-col gap-4 border border-glass-border">
               <Heart className="w-8 h-8 text-gold" />
               <div>
                 <span className="font-serif text-3xl md:text-4xl text-ivory block font-medium">100%</span>
@@ -215,7 +215,7 @@ export default function Home() {
             </div>
 
             {/* Stat Card 4 */}
-            <div className="glass-panel p-8 rounded-2xl flex flex-col gap-4 border border-glass-border">
+            <div className="glass-panel p-3 sm:p-4 md:p-8 rounded-2xl flex flex-col gap-4 border border-glass-border">
               <Sparkles className="w-8 h-8 text-gold" />
               <div>
                 <span className="font-serif text-3xl md:text-4xl text-ivory block font-medium">2020</span>

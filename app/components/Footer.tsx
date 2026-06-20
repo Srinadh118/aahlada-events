@@ -4,7 +4,7 @@ import { MessageCircle, Mail, MapPin, Phone, Clock } from "lucide-react";
 export default function Footer() {
   return (
     <footer className="bg-[#08080C] border-t border-glass-border pt-20 pb-10">
-      <div className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+      <div className="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
         {/* Brand Column */}
         <div className="md:col-span-2 flex flex-col gap-6">
           <Link href="/" className="flex flex-col">
@@ -69,7 +69,7 @@ export default function Footer() {
             </li>
             <li className="flex gap-3 items-center">
               <Mail className="w-4 h-4 text-gold shrink-0" />
-              <a href="mailto:celebrate@aahladaevents.com" className="hover:text-gold transition-colors">
+              <a href="mailto:celebrate@aahladaevents.com" className="hover:text-gold transition-colors text-xs xl:text-sm">
                 celebrate@aahladaevents.com
               </a>
             </li>
@@ -81,7 +81,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 md:px-12 border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+      <div className="max-w-7xl mx-auto px-6 lg:px-12 border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
         <p className="font-sans text-xs text-ivory-muted/80 text-center md:text-left">
           &copy; {new Date().getFullYear()} Aahlada Events. All Rights Reserved. Crafted for luxury.
         </p>

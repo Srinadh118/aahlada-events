@@ -175,7 +175,7 @@ export default function Contact() {
             <div className="relative rounded-2xl overflow-hidden aspect-video border border-glass-border shadow-xl">
               <iframe
                 title="Aahlada Events Studio Location"
-                src="https://maps.google.com/maps?q=17.35364,78.56433&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3808.6638947194874!2d78.57286297520918!3d17.331758483545947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcba1f157c28615%3A0x93f642808ddca371!2sAahlada%20Events!5e0!3m2!1sen!2sin!4v1781978231962!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
                 className="border-0 opacity-75 grayscale invert"

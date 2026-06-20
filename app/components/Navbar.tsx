@@ -39,10 +39,10 @@ export default function Navbar() {
             : "bg-transparent py-6"
         }`}
       >
-        <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between">
           {/* Logo / Brand Mark */}
           <Link href="/" className="group flex flex-col">
-            <span className="font-serif text-2xl md:text-3xl tracking-[0.15em] text-ivory group-hover:text-gold transition-colors duration-300">
+            <span className="font-serif text-2xl lg:text-3xl tracking-[0.15em] text-ivory group-hover:text-gold transition-colors duration-300">
               AAHLADA
             </span>
             <span className="font-sans text-[0.65rem] tracking-[0.4em] text-gold uppercase -mt-1 pl-0.5">
@@ -51,14 +51,14 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Navigation Links */}
-          <nav className="hidden md:flex items-center space-x-10">
+          <nav className="hidden md:flex items-center space-x-4 lg:space-x-8 xl:space-x-10">
             {navItems.map((item) => {
               const isActive = pathname === item.path;
               return (
                 <Link
                   key={item.path}
                   href={item.path}
-                  className="relative py-2 font-sans text-sm tracking-[0.15em] text-ivory/80 hover:text-gold uppercase transition-colors duration-300"
+                  className="relative py-2 font-sans text-xs lg:text-sm tracking-[0.1em] lg:tracking-[0.15em] text-ivory/80 hover:text-gold uppercase transition-colors duration-300"
                 >
                   {item.name}
                   {isActive && (
@@ -79,9 +79,9 @@ export default function Navbar() {
               href="https://wa.me/919731647465?text=Hi%20Aahlada%20Events%2C%20I%20would%20like%20to%20inquire%20about%20your%20event%20planning%20and%20decor%20services."
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-gold/30 hover:border-gold bg-gold/5 hover:bg-gold/10 text-gold text-xs font-sans tracking-[0.2em] uppercase transition-all duration-300 shadow-[0_0_10px_rgba(201,168,106,0.05)] hover:shadow-[0_0_20px_rgba(201,168,106,0.15)]"
+              className="inline-flex items-center gap-1.5 lg:gap-2 px-3.5 py-2 lg:px-5 lg:py-2.5 rounded-full border border-gold/30 hover:border-gold bg-gold/5 hover:bg-gold/10 text-gold text-[10px] lg:text-xs font-sans tracking-[0.1em] lg:tracking-[0.2em] uppercase transition-all duration-300 shadow-[0_0_10px_rgba(201,168,106,0.05)] hover:shadow-[0_0_20px_rgba(201,168,106,0.15)]"
             >
-              <MessageCircle className="w-3.5 h-3.5" />
+              <MessageCircle className="w-3 h-3 lg:w-3.5 lg:h-3.5" />
               Inquire Now
             </a>
           </div>
