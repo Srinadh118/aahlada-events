@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import WhatsAppFAB from "./components/WhatsAppFAB";
+import CustomCursor from "./components/CustomCursor";
 
 const cormorant = Cormorant_Garamond({
   variable: "--font-cormorant",
@@ -55,7 +56,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col bg-onyx text-ivory selection:bg-gold selection:text-onyx">
         {/* SVG Noise overlay for paper/metallic premium feel */}
         <div className="fixed inset-0 z-50 pointer-events-none bg-noise" />
-        
+
         {/* LocalBusiness JSON-LD schema for Local SEO */}
         <script
           type="application/ld+json"
@@ -105,6 +106,7 @@ export default function RootLayout({
         </main>
         <Footer />
         <WhatsAppFAB />
+        <CustomCursor />
       </body>
     </html>
   );

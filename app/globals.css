@@ -117,3 +117,17 @@ body {
   animation: pulse-glow 10s infinite ease-in-out;
   will-change: transform, opacity;
 }
+
+/* Hide default cursor on desktop/mouse devices to show the custom cursor */
+@media (pointer: fine) {
+  body, 
+  a, 
+  button, 
+  select, 
+  input, 
+  textarea, 
+  [role="button"],
+  .cursor-pointer {
+    cursor: none !important;
+  }
+}
