@@ -76,7 +76,7 @@ export default function Navbar() {
           {/* Inquiry WhatsApp Button */}
           <div className="hidden md:block">
             <a
-              href="https://wa.me/919731647465?text=Hi%20Aahlada%20Events%2C%20I%20would%20like%20to%20inquire%20about%20your%20event%20planning%20and%20decor%20services."
+              href="https://wa.me/918466001818?text=Hi%20Aahlada%20Events%2C%20I%20would%20like%20to%20inquire%20about%20your%20event%20planning%20and%20decor%20services."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 lg:gap-2 px-3.5 py-2 lg:px-5 lg:py-2.5 rounded-full border border-gold/30 hover:border-gold bg-gold/5 hover:bg-gold/10 text-gold text-[10px] lg:text-xs font-sans tracking-[0.1em] lg:tracking-[0.2em] uppercase transition-all duration-300 shadow-[0_0_10px_rgba(201,168,106,0.05)] hover:shadow-[0_0_20px_rgba(201,168,106,0.15)]"
@@ -129,7 +129,7 @@ export default function Navbar() {
                 Fusion of culture & creativity together
               </p>
               <a
-                href="https://wa.me/919731647465?text=Hi%20Aahlada%20Events%2C%20I%20would%20like%20to%20inquire%20about%20your%20event%20planning%20and%20decor%20services."
+                href="https://wa.me/918466001818?text=Hi%20Aahlada%20Events%2C%20I%20would%20like%20to%20inquire%20about%20your%20event%20planning%20and%20decor%20services."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full flex items-center justify-center gap-2 py-4 rounded-full bg-gold text-onyx text-sm font-sans tracking-[0.2em] uppercase font-semibold transition-all duration-300 shadow-[0_0_15px_rgba(201,168,106,0.3)]"

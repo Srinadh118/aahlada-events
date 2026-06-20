@@ -33,9 +33,9 @@ export default function Contact() {
 - Date: ${formData.date}
 - Event Type: ${formData.eventType}
 - Message: ${formData.message}`;
-      
+
       const encodedText = encodeURIComponent(whatsappText);
-      window.open(`https://wa.me/919731647465?text=${encodedText}`, "_blank");
+      window.open(`https://wa.me/918466001818?text=${encodedText}`, "_blank");
       setSubmitted(false);
       setFormData({
         name: "",
@@ -67,7 +67,7 @@ export default function Contact() {
               Start The Conversation
             </span>
           </motion.div>
-          
+
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -76,7 +76,7 @@ export default function Contact() {
           >
             Connect With Us
           </motion.h1>
-          
+
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}

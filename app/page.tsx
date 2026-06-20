@@ -351,7 +351,7 @@ export default function Home() {
 
           <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto shrink-0">
             <a
-              href="https://wa.me/919731647465?text=Hi%20Aahlada%20Events%2C%20I%20would%20like%20to%20inquire%20about%20your%20event%20planning%20and%20decor%20services."
+              href="https://wa.me/918466001818?text=Hi%20Aahlada%20Events%2C%20I%20would%20like%20to%20inquire%20about%20your%20event%20planning%20and%20decor%20services."
               target="_blank"
               rel="noopener noreferrer"
               className="flex-1 sm:flex-none sm:w-60 inline-flex items-center justify-center gap-2.5 px-6 py-4 rounded-full bg-gold text-onyx font-sans text-sm tracking-[0.15em] uppercase font-semibold transition-all duration-300 hover:bg-gold-hover hover:-translate-y-0.5 shadow-[0_0_20px_rgba(201,168,106,0.2)]"

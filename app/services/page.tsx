@@ -150,7 +150,7 @@ export default function Services() {
                   </div>
                   
                   <a
-                    href={`https://wa.me/919731647465?text=Hi%20Aahlada%20Events%2C%20${encodeURIComponent(service.waText)}`}
+                    href={`https://wa.me/918466001818?text=Hi%20Aahlada%20Events%2C%20${encodeURIComponent(service.waText)}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full border border-gold/20 bg-gold/5 hover:bg-gold/10 text-gold text-[0.65rem] font-sans tracking-widest uppercase transition-all duration-300"

@@ -12,7 +12,7 @@ export default function WhatsAppFAB() {
       className="fixed bottom-6 right-6 z-40"
     >
       <a
-        href="https://wa.me/919731647465?text=Hi%20Aahlada%20Events%2C%20I%20would%20like%20to%20inquire%20about%20your%20event%20planning%20and%20decor%20services."
+        href="https://wa.me/918466001818?text=Hi%20Aahlada%20Events%2C%20I%20would%20like%20to%20inquire%20about%20your%20event%20planning%20and%20decor%20services."
         target="_blank"
         rel="noopener noreferrer"
         className="relative group flex items-center justify-center w-14 h-14 rounded-full bg-gold text-onyx shadow-[0_0_20px_rgba(201,168,106,0.3)] transition-all duration-300 hover:scale-105"
