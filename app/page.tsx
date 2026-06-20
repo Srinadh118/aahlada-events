@@ -153,6 +153,10 @@ export default function Home() {
 
       {/* 2. INTRODUCTION & METRICS */}
       <section className="relative py-24 md:py-36 px-6 md:px-12 max-w-7xl mx-auto z-10">
+        {/* Background Glows */}
+        <div className="absolute top-10 left-0 w-[400px] h-[400px] gold-glow-radial pointer-events-none -z-10" />
+        <div className="absolute bottom-10 right-0 w-[450px] h-[450px] gold-glow-radial pointer-events-none -z-10" />
+
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -274,6 +278,9 @@ export default function Home() {
 
       {/* 4. TESTIMONIALS */}
       <section className="relative py-24 md:py-36 px-6 z-10 max-w-4xl mx-auto text-center">
+        {/* Background Glow */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] gold-glow-radial pointer-events-none -z-10" />
+
         <Quote className="w-12 h-12 text-gold/30 mx-auto mb-8" />
 
         <div className="min-h-[220px] flex items-center justify-center">

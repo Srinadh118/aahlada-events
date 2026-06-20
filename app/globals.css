@@ -41,6 +41,17 @@
       transform: scale(1.15) translate(-1%, -0.5%);
     }
   }
+
+  @keyframes pulse-glow {
+    0%, 100% {
+      opacity: 0.6;
+      transform: scale(0.95);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.1);
+    }
+  }
 }
 
 html {
@@ -102,5 +113,7 @@ body {
 
 /* Gold radial glow gradients for page headers and backgrounds */
 .gold-glow-radial {
-  background: radial-gradient(circle at 50% 50%, rgba(201, 168, 106, 0.08) 0%, transparent 60%);
+  background: radial-gradient(circle at 50% 50%, rgba(201, 168, 106, 0.15) 0%, transparent 65%);
+  animation: pulse-glow 10s infinite ease-in-out;
+  will-change: transform, opacity;
 }
