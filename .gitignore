@@ -39,3 +39,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+
+#Documentation
+Plan.md
+
+.agents/
+aahlada-deep-research.md
